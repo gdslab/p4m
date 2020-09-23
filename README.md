@@ -26,5 +26,3 @@ This command will create a path *"\~\/reflectance_path"* with *"reflectance imag
 ## Comment
 please contact Hunsoo if you have any question </br>
 please refer https://github.com/micasense/imageprocessing for MicaSense
-
-Adding a new line.
