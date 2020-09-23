@@ -28,11 +28,11 @@ initial_path = os.getcwd()
 # Raw Image (.TIF) should be in path "raw_images"
 raw_image_list = glob.glob(os.path.join(input_dir,'*.TIF'))
 #image_names = sorted(glob.glob(os.path.join(os.getcwd()+'/raw_images/100MEDIA_DJI_0192.TIF')))
-        
+
+print("Start Radiometric Calibration")        
 for i in range(len(raw_image_list)):
 
     raw_image = raw_image_list[i]
-    print("Strat Radiometric Calibration")   
     print("Processing %s [%d/%d] %.2f percent done." % (os.path.basename(raw_image), i+1, len(raw_image_list), float(i+1)/float(len(raw_image_list)) * 100))
 
     cap = capture.Capture.from_filelist([raw_image])
