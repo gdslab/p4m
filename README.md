@@ -1,7 +1,7 @@
 # raw2reflectance.py
 * Convert *"Raw .TIF Images"* to *"Reflectance .TIF Images (scale:0-65536)"*
 ```
-python raw2reflectance.py {raw_images_path} {reflectance_images_path}
+python raw2ref.py {raw_images_path} {reflectance_images_path}
 ```
 
 * Example:
