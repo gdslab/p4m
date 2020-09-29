@@ -1,12 +1,12 @@
-# raw2reflectance.py
+# raw2ref.py
 * Convert *"Raw .TIF Images"* to *"Reflectance .TIF Images (scale:0-65536)"*
 ```
-python raw2reflectance.py {raw_images_path} {reflectance_images_path}
+python raw2ref.py {raw_images_path} {reflectance_images_path}
 ```
 
 * Example:
 ```
-python ~/python/p4m/Raw2Reflectance/raw2reflectance.py ~/gdsl-depot/Cruz_ACRE/2020/raw_data/200902_p4m_acre/101MEDIA ~/reflectance_path
+python ~/python/p4m/Raw2Reflectance/raw2ref.py ~/gdsl-depot/Cruz_ACRE/2020/raw_data/200902_p4m_acre/101MEDIA ~/reflectance_path
 ```
 This command will create a path *"\~\/reflectance_path"* with *"reflectance images(.TIF)"* by converting raw images(.TIF) in *"\~\/gdsl-depot/Cruz_ACRE/2020/raw_data/200902_p4m_acre/101MEDIA"*
 
