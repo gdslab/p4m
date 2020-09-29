@@ -109,7 +109,7 @@ for i in range(len(raw_image_list)):
     ref_image = ref_image_list[i]
     if os.path.basename(raw_image)!=os.path.basename(ref_image):
         print("warning. metadata does not match")
-    os.system('exiftool -TagsFromFile {raw} -all:all -overwrite_original {ref}'.format(raw=raw_image,ref=ref_image))
+    os.system('exiftool -TagsFromFile {raw} -all:all -xmp -overwrite_original {ref}'.format(raw=raw_image,ref=ref_image))
 
 print("it takes %.2f seconds" %(time.time()-start))
 
